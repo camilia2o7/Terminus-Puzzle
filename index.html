@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<meta property="og:title" content="Terminus Puzzle Solver" />
+<meta property="og:description" content="Solve the Terminus Puzzle and get the solution code based on your selected symbols!" />
+<meta property="og:image" content="" />
+<meta property="og:url" content="" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Terminus Puzzle Solver" />
+<meta name="twitter:description" content="Solve the Terminus Puzzle and get the solution code based on your selected symbols!" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1 class="title">Terminus Puzzle Solver</h1>
+<div class="laptops-container">
+<div class="laptop-card">
+<h3>Laptop X</h3>
+<select class="symbol-select" id="laptopX" onchange="updatePreview(this, 'previewX')">
+<option value="">Select Symbol</option>
+<option value="0" class="symbol-option"><img src="/images/0.png" alt="Symbol 0"> Symbol 0</option>
+<option value="10" class="symbol-option"><img src="/images/10.png" alt="Symbol 10"> Symbol 10</option>
+<option value="11" class="symbol-option"><img src="/images/11.png" alt="Symbol 11"> Symbol 11</option>
+<option value="20" class="symbol-option"><img src="/images/20.png" alt="Symbol 20"> Symbol 20</option>
+<option value="21" class="symbol-option"><img src="/images/21.png" alt="Symbol 21"> Symbol 21</option>
+<option value="22" class="symbol-option"><img src="/images/22.png" alt="Symbol 22"> Symbol 22</option>
+</select>
+<div class="symbol-preview" id="previewX"></div>
+</div>
+<div class="laptop-card">
+<h3>Laptop Y</h3>
+<select class="symbol-select" id="laptopY" onchange="updatePreview(this, 'previewY')">
+<option value="">Select Symbol</option>
+<option value="0" class="symbol-option"><img src="/images/0.png" alt="Symbol 0"> Symbol 0</option>
+<option value="10" class="symbol-option"><img src="/images/10.png" alt="Symbol 10"> Symbol 10</option>
+<option value="11" class="symbol-option"><img src="/images/11.png" alt="Symbol 11"> Symbol 11</option>
+<option value="20" class="symbol-option"><img src="/images/20.png" alt="Symbol 20"> Symbol 20</option>
+<option value="21" class="symbol-option"><img src="/images/21.png" alt="Symbol 21"> Symbol 21</option>
+<option value="22" class="symbol-option"><img src="/images/22.png" alt="Symbol 22"> Symbol 22</option>
+</select>
+<div class="symbol-preview" id="previewY"></div>
+</div>
+<div class="laptop-card">
+<h3>Laptop Z</h3>
+<select class="symbol-select" id="laptopZ" onchange="updatePreview(this, 'previewZ')">
+<option value="">Select Symbol</option>
+<option value="0" class="symbol-option"><img src="/images/0.png" alt="Symbol 0"> Symbol 0</option>
+<option value="10" class="symbol-option"><img src="/images/10.png" alt="Symbol 10"> Symbol 10</option>
+<option value="11" class="symbol-option"><img src="/images/11.png" alt="Symbol 11"> Symbol 11</option>
+<option value="20" class="symbol-option"><img src="/images/20.png" alt="Symbol 20"> Symbol 20</option>
+<option value="21" class="symbol-option"><img src="/images/21.png" alt="Symbol 21"> Symbol 21</option>
+<option value="22" class="symbol-option"><img src="/images/22.png" alt="Symbol 22"> Symbol 22</option>
+</select>
+<div class="symbol-preview" id="previewZ"></div>
+</div>
+</div>
+<div class="results">
+<div class="equation">
+2X + 11 | (2Z + Y) - 5 | |(Y + Z) - X|
+</div>
+<div class="final-code" id="solution">
+00-00-00
+</div>
+</div>
+<table class="symbol-table">
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/images/0.png" alt="Symbol 0"></td>
+<td>0</td>
+</tr>
+<tr>
+<td><img src="/images/10.png" alt="Symbol 10"></td>
+<td>10</td>
+</tr>
+<tr>
+<td><img src="/images/11.png" alt="Symbol 11"></td>
+<td>11</td>
+</tr>
+<tr>
+<td><img src="/images/20.png" alt="Symbol 20"></td>
+<td>20</td>
+</tr>
+<tr>
+<td><img src="/images/21.png" alt="Symbol 21"></td>
+<td>21</td>
+</tr>
+<tr>
+<td><img src="/images/22.png" alt="Symbol 22"></td>
+<td>22</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
