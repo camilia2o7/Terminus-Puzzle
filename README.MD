@@ -16,7 +16,7 @@ The **Terminus Puzzle Solver** is a web-based tool that allows users to select s
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/terminus-puzzle-solver.git
+   git clone https://github.com/camilia2o7/terminus-puzzle-solver.git
    ```
 2. Navigate to the project folder:
    ```bash
